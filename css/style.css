@@ -1,0 +1,25 @@
+/* COMMON */
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    margin-bottom: 0;
+}
+li{
+    display: inline-block;
+}
+/* HEADER */
+header{
+    background-color: #2c3f4f;
+    height: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+header ul{
+    text-align: right;
+}
+.ms_icon{
+    text-align: right;
+}
