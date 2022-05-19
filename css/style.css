@@ -52,3 +52,23 @@ header ul{
 .ms_testo_sinistra{
     text-align: left;
 }
+
+/* contatti */
+#contatti h3, .stella{
+    text-align: center;
+}
+
+/* location */
+#location{
+    background-color: #3b546d;
+    color: white;
+    text-align: center;
+}
+
+/* FOOTER */
+footer{
+    background-color: #2c3f4f;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
