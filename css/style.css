@@ -20,6 +20,7 @@ section{
 .ms-container{
     width: 70%;
     margin: 0 auto;
+    max-width: 1170px;
 }
 /* HEADER */
 header{
@@ -56,6 +57,9 @@ header ul{
 /* contatti */
 #contatti h3, .stella{
     text-align: center;
+}
+#contatti .ms-container{
+    padding: 0 1rem;
 }
 
 /* location */
