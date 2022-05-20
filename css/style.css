@@ -20,7 +20,7 @@ section{
     text-align: center;
 }
 .ms-container{
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     max-width: 1170px;
 }
@@ -40,6 +40,7 @@ section{
     border-radius: 3px;
     background-color: white;
 }
+
 /* HEADER */
 header{
     background-color: #2c3f4f;
@@ -49,15 +50,18 @@ header{
     align-items: center;
     text-transform: uppercase;
 }
-.logo{
-    font-size: 1.7rem;
+.header-left-content{
+    font-size: 1.5rem;
     font-weight: 700;
 }
-header a {
+header a{
     padding: 0 0.7rem;
     text-decoration: none;
     color: inherit;
     font-size: 1rem;
+}
+header a:hover{
+    color: white;
 }
 header ul{
     text-align: right;
@@ -95,11 +99,18 @@ h1{
 .ms_testo_sinistra{
     text-align: left;
 }
+#about .stella::after, 
+#about .stella::before{
+    width: 70px;
+}
 .ms_btn{
     color: inherit;
     border-color: white;
     font-size: 0.9rem;
     margin-top: 2rem;
+}
+#about a:hover{
+    color: white;
 }
 
 /* contatti */
@@ -112,6 +123,7 @@ h1{
 #contatti .stella::after, 
 #contatti .stella::before{
     background-color: black;
+    width: 70px;
 }
 .ms-form{
     border-top: 0;
@@ -140,14 +152,41 @@ h1{
 }
 
 /* FOOTER */
+/* footer top */
 .footer-top{
     background-color: #3b546d;
     color: white;
     text-align: center;
 }
+.big-text{
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+.footer-top .icon{
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 0.3rem 0.2rem;
+    display: inline-block;
+}
+.footer-top .icon a{
+    color: inherit;
+}
+.footer-top p{
+    font-size: 0.9rem;
+}
+.footer-top p a{
+    color: #19bc9b;
+    text-decoration: none;
+}
+
+/* footer bottom */
 .footer-bottom{
     background-color: #2c3f4f;
     color: white;
     padding: 2rem 0;
     text-align: center;
+    font-size: 0.8rem;
 }
