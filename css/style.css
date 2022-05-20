@@ -12,6 +12,8 @@ li{
 section{
     padding: 2.5rem 0;
 }
+
+/* UTILITIES */
 .verde{
     background-color: #19bc9b;
     color: white;
@@ -22,6 +24,22 @@ section{
     margin: 0 auto;
     max-width: 1170px;
 }
+.stella{
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+.stella i{
+    margin: 0 1.1rem;
+}
+.stella::after, .stella::before{
+    content: '';
+    width: 110px;
+    height: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 3px;
+    background-color: white;
+}
 /* HEADER */
 header{
     background-color: #2c3f4f;
@@ -29,6 +47,17 @@ header{
     color: white;
     display: flex;
     align-items: center;
+    text-transform: uppercase;
+}
+.logo{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+header a {
+    padding: 0 0.7rem;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
 }
 header ul{
     text-align: right;
@@ -39,19 +68,38 @@ header ul{
 
 /* MAIN */
 /* prima section */
+#start{
+    text-transform: uppercase;
+}
+h1{
+    margin: 1rem 0;
+}
 .ms_img{
     width: 200px;
     margin: 0 auto;
 }
 
-/* porfolio */
-#porfolio{
+/* portfolio */
+#portfolio{
     text-align: center;
+}
+#portfolio .stella::after, 
+#portfolio .stella::before{
+    background-color: black;
+}
+#portfolio img{
+    border-radius: 10px;
 }
 
 /* about */
 .ms_testo_sinistra{
     text-align: left;
+}
+.ms_btn{
+    color: inherit;
+    border-color: white;
+    font-size: 0.9rem;
+    margin-top: 2rem;
 }
 
 /* contatti */
@@ -61,16 +109,43 @@ header ul{
 #contatti .ms-container{
     padding: 0 1rem;
 }
+#contatti .stella::after, 
+#contatti .stella::before{
+    background-color: black;
+}
+.ms-form{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+.ms-form:focus{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #717981;
+    box-shadow: none;
+}
+#contatti .ms_btn{
+    background-color: #19bc9b;
+    color: white;
+}
 
 /* location */
-#location{
+.footer-top{
+    background-color: #3b546d;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* FOOTER */
+.footer-top{
     background-color: #3b546d;
     color: white;
     text-align: center;
 }
-
-/* FOOTER */
-footer{
+.footer-bottom{
     background-color: #2c3f4f;
     color: white;
     padding: 2rem 0;
